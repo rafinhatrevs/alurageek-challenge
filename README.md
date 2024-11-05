@@ -26,13 +26,13 @@ parte de um desafio do programa ONE e oferece uma forma simples de gerenciar os 
 
 - **index.html:** Arquivo que contém a estrutura html da página AluraGeek.
 - **style.css:** Arquivo que contém a folha de estilo da página AluraGeek.
-- **db.json:** 
+- **db.json:** Arquivo que simula uma API REST para realizar operações CRUD e simular respostas do servidor.
 
 #### js/:
-  - **conexaoApi.js:**
-  - **mostrarProdutos.js:**
-  - **guardarProduto.js:**
-  - **excluirProduto.js:**
+  - **conexaoApi.js:** Arquivo responsável pela conexão com a API para manipular os dados dos produtos.
+  - **mostrarProdutos.js:** Arquivo responsável por exibir os produtos armazenados na página.
+  - **guardarProduto.js:** Arquivo responsável por gerenciar o armazenamento dos novos produtos.
+  - **excluirProduto.js:** Arquivo responsável por lidar com a exclusão de produtos da lista.
   
 #### assets/:
   Pasta que contém todas as imagens utilizadas na página.
@@ -41,13 +41,14 @@ parte de um desafio do programa ONE e oferece uma forma simples de gerenciar os 
 
 ### ⚙️ Funcionalidades
 
-- **Conectar API:**  
-  
+- **Conexão API:**  
+  Estabelece uma conexão com a API para realizar operações de leitura e escrita de produtos.
 - **Mostrar Produtos:**  
-  
+  Exibe os produtos armazenados na interface do usuário.
 - **Guardar Produto:**  
-  
+  Permite que novos produtos sejam guardados no catálogo, utilizando um formulário.
 - **Excluir Produto:**  
+  Possibilita a exclusão de produtos do catálogo sempre que necessário.
   
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -56,7 +57,7 @@ parte de um desafio do programa ONE e oferece uma forma simples de gerenciar os 
 - **HTML:** Linguagem de marcação utilizada na construção de páginas na web.
 - **CSS:** Mecanismo para adicionar estilos a uma página web.
 - **JavaScript:** Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-- **json-server:**
+- **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
