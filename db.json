@@ -1,0 +1,40 @@
+{
+  "produtos": [
+    {
+      "id": "a113",
+      "nome": "Pato de borracha",
+      "valor": 100,
+      "imagem": "https://st.depositphotos.com/1003495/3293/i/600/depositphotos_32939667-stock-photo-yellow-rubber-duck.jpg"
+    },
+    {
+      "id": "f5c8",
+      "nome": "Super Mario",
+      "valor": 2500,
+      "imagem": "https://st4.depositphotos.com/3539239/24197/i/600/depositphotos_241972712-stock-photo-rio-janeiro-brazil-january-2019.jpg"
+    },
+    {
+      "id": "4047",
+      "nome": "Super Nintendo",
+      "valor": 64900,
+      "imagem": "https://st4.depositphotos.com/36565632/37795/i/600/depositphotos_377955612-stock-photo-milan-italy-2020-closeup-snes.jpg"
+    },
+    {
+      "id": "cd51",
+      "nome": "Nintendo Switch",
+      "valor": 210000,
+      "imagem": "https://st2.depositphotos.com/1000647/42289/i/600/depositphotos_422895900-stock-photo-moscow-russia-october-2020-super.jpg"
+    },
+    {
+      "id": "c599",
+      "nome": "Polaroid",
+      "valor": 80000,
+      "imagem": "https://static8.depositphotos.com/1561060/1049/i/600/depositphotos_10499921-stock-photo-polaroid-instant-camera.jpg"
+    },
+    {
+      "id": "8d34",
+      "nome": "Luigi",
+      "valor": 2500,
+      "imagem": "https://st3.depositphotos.com/7811112/37194/i/600/depositphotos_371943000-stock-photo-mario-kart-deluxe-video-game.jpg"
+    }
+  ]
+}

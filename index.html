@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <figure class="cabecalho__logo">
+            <img src="./assets/logo.png" alt="Logotipo da AluraGeek.">
+        </figure>
+        <p class="cabecalho__titulo">AluraGeek</p>
+    </header>
+
+    <main class="principal">
+        <section class="principal__produtos">
+            <h2 class="produtos__titulo">MEUS PRODUTOS:</h2>
+            <ul id="produtosLista" class="produtos__lista">
+                <p class="lista__mensagem" id="listaMensagem" style="display: none;">Nenhum produto foi
+                    guardado.</p>
+            </ul>
+        </section>
+
+        <section class="principal__formulario">
+            <h2 class="formulario__titulo">ADICIONAR<br>PRODUTO:</h2>
+            <form class="form">
+                <input class="form__campo" id="nome" type="text" placeholder="nome..." required>
+                <input class="form__campo" id="valor" type="number" placeholder="valor..." required>
+                <input class="form__campo" id="imagem" type="url" placeholder="imagem..." required>
+
+                <div class="form__botoes">
+                    <button class="botao__guardar" id="botaoGuardar" type="submit">Guardar</button>
+                    <button class="botao__limpar" id="botaoLimpar" type="button">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__principal">
+            <figure class="rodape__logo">
+                <img src="./assets/logo.png" alt="Logotipo da AluraGeek.">
+            </figure>
+            <p class="rodape__titulo">AluraGeek</p>
+        </div>
+        <div class="rodape__info">
+            <p class="info__desenvolvedor">DESENVOLVIDO POR RAFAELLA TREVIZAN</p>
+            <p class="info__alura">ALURA LATAM 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/conexaoApi.js" type="module"></script>
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+    <script src="./js/guardarProduto.js" type="module"></script>
+    <script src="./js/excluirProduto.js" type="module"></script>
+
+</body>
+
+</html>

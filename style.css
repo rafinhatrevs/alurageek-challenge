@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --cor-de-fundo-cabecalho: #5300C8;
+    --cor-de-fundo-card: #5D04D9;
+    --cor-de-fundo-botao: #03318C;
+    --cor-de-fundo-rodape: #5300C8;
+
+    --cor-texto-logo: #E5E5E5;
+    --cor-texto-titulo: #000000;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-escuro: #03318C;
+
+    --cor-barra-rolagem: #D6D6D6;
+
+    --cor-borda-card: #000000;
+    --cor-borda-campo: #03318C;
+    --cor-borda-botao: #03318C;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: var(--cor-de-fundo-cabecalho);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    margin: 0;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-texto-logo);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.principal {
+    margin: 80px 0;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.principal__produtos {
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produtos__titulo,
+.formulario__titulo {
+    text-align: center;
+    color: var(--cor-texto-titulo);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.produtos__lista {
+    margin: 0;
+    padding: 10px;
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 30px 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.produtos__lista::-webkit-scrollbar {
+    width: 5px;
+}
+
+.produtos__lista::-webkit-scrollbar-button {
+    display: none;
+}
+
+.produtos__lista::-webkit-scrollbar-thumb {
+    background-color: var(--cor-barra-rolagem);
+    border-radius: 10px;
+}
+
+.lista__card {
+    background-color: var(--cor-de-fundo-card);
+    height: 165px;
+    width: 120px;
+    border: 3px solid var(--cor-borda-card);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card__img {
+    margin-bottom: 5px;
+    height: 110px;
+    width: 110px;
+    border: 3px solid var(--cor-borda-card);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card__nome {
+    margin: 0;
+    padding-left: 5px;
+    align-self: flex-start;
+    text-align: left;
+    color: var(--cor-texto-claro);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.65rem;
+}
+
+.card__info {
+    padding: 5px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.info__valor {
+    margin: 0;
+    color: var(--cor-texto-claro);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.65rem;
+}
+
+.info__icone {
+    margin: 0;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.lista__mensagem {
+    color: var(--cor-texto-escuro);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.principal__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form__campo {
+    padding: 5px;
+    height: 40px;
+    width: 300px;
+    border: 2px solid var(--cor-borda-campo);
+    border-radius: 30px;
+    outline: none;
+}
+
+.form__campo::placeholder {
+    color: var(--cor-texto-escuro);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao__guardar,
+.botao__limpar {
+    padding: 5px;
+    height: 40px;
+    width: 145px;
+    border: 2px solid var(--cor-borda-botao);
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.botao__guardar {
+    background-color: var(--cor-de-fundo-botao);
+    color: var(--cor-texto-claro);
+}
+
+.botao__limpar {
+    background-color: transparent;
+    color: var(--cor-texto-escuro);
+}
+
+.rodape {
+    background-color: var(--cor-de-fundo-rodape);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape__principal {
+    display: flex;
+    align-items: center;
+}
+
+.rodape__logo {
+    margin: 0;
+}
+
+.rodape__titulo {
+    color: var(--cor-texto-logo);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.rodape__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__desenvolvedor {
+    margin: 0;
+    color: var(--cor-texto-claro);
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7rem;
+}
+
+.info__alura {
+    color: var(--cor-texto-claro);
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .produtos__lista {
+        padding: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 5px;
+    }
+}
