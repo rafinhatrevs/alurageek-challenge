@@ -167,6 +167,7 @@ body {
 }
 
 .lista__mensagem {
+    max-width: 300px;
     color: var(--cor-texto-escuro);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
